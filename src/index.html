@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,76 +12,77 @@
   </head>
 
   <body>
-    <ul class="filters">
-      <li>
-        <label>Include Cover</label>
-        <select class="picker" for="includeCover">
-          <option value="">Include Cover</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
-        </select>
-      </li>
-      <li>
-        <label>Name</label>
-        <input class="picker" for="name" type="text" />
-      </li>
-      <li>
-        <label>Last Name</label>
-        <input class="picker" for="lastName" type="text" />
-      </li>
-      <li>
-        <label>S.M. Position</label>
-        <select class="picker" for="socialMediaPosition">
-          <option value="position-left">Left</option>
-          <option value="position-right">Right</option>
-        </select>
-      </li>
-      <li>
-        <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
-      </li>
-      <li>
-        <label>Github</label>
-        <input class="picker" for="github" type="text" />
-      </li>
-      <li>
-        <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
-      </li>
-      <li>
-        <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
-      </li>
-      <li>
-        <label>Role</label>
-        <select class="picker" for="role">
-          <option value="">null</option>
-          <option value="Web Developer">Web Developer</option>
-          <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
-        </select>
-      </li>
-      <li>
-        <label>City</label>
-        <select class="picker" for="city">
-          <option value="">null</option>
-          <option value="Miami">Miami</option>
-          <option value="Munich">Munich</option>
-          <option value="Caracas">Caracas</option>
-          <option value="Toronto">Toronto</option>
-        </select>
-      </li>
-      <li>
-        <label>Country</label>
-        <select class="picker" for="country">
-          <option value="">null</option>
-          <option value="USA">USA</option>
-          <option value="Germany">Germany</option>
-          <option value="Canada">Canada</option>
-          <option value="Venezuela">Venezuela</option>
-        </select>
-      </li>
-    </ul>
+    <div class="filters-wrapper">
+      <ul class="filters">
+        <li>
+          <label>Include Cover</label>
+          <select class="picker" data-attribute="includeCover">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </li>
+        <li>
+          <label>Name</label>
+          <input class="picker" data-attribute="name" type="text" />
+        </li>
+        <li>
+          <label>Last Name</label>
+          <input class="picker" data-attribute="lastName" type="text" />
+        </li>
+        <li>
+          <label>S.M. Position</label>
+          <select class="picker" data-attribute="socialMediaPosition">
+            <option value="position-left">Left</option>
+            <option value="position-right">Right</option>
+          </select>
+        </li>
+        <li>
+          <label>Twitter</label>
+          <input class="picker" data-attribute="twitter" type="text" />
+        </li>
+        <li>
+          <label>Github</label>
+          <input class="picker" data-attribute="github" type="text" />
+        </li>
+        <li>
+          <label>LinkedIn</label>
+          <input class="picker" data-attribute="linkedin" type="text" />
+        </li>
+        <li>
+          <label>Instagram</label>
+          <input class="picker" data-attribute="instagram" type="text" />
+        </li>
+        <li>
+          <label>Role</label>
+          <select class="picker" data-attribute="role">
+            <option value="Web Developer">Web Developer</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="Cybersecurity Specialist"
+              >Cybersecurity Specialist</option
+            >
+          </select>
+        </li>
+        <li>
+          <label>City</label>
+          <select class="picker" data-attribute="city">
+            <option value="Madrid">Madrid</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Seville">Seville</option>
+            <option value="Valencia">Valencia</option>
+          </select>
+        </li>
+        <li>
+          <label>Country</label>
+          <select class="picker" data-attribute="country">
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+            <option value="Canada">Canada</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+
     <div id="widget_content"></div>
 
     <!-- do not remove this bundle.js tag -->
